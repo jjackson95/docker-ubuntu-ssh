@@ -17,10 +17,10 @@ RUN apt-get update && apt-mark hold initscripts udev plymouth mountall && \
       sudo \
       vim-tiny \
       ca-certificates \
-      curl
+      curl -y
 
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash - && \
-    apt-get install nodejs
+    apt-get install nodejs -y
 
 COPY ./package* /src/
 
@@ -29,7 +29,7 @@ WORKDIR /src
 # Install build-time requirements, where compilation is needed
 RUN apt-get install -yqq \
       build-essential \
-      python \
+      python -y \
     && \
     npm i && \
     # Perform extensive cleanup
