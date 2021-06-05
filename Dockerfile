@@ -1,4 +1,4 @@
-FROM debian:13.0
+FROM debian
 MAINTAINER Doro Wu <fcwu.tw@gmail.com>
 
 EXPOSE 3000
