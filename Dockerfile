@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM debian:13.0
 MAINTAINER Doro Wu <fcwu.tw@gmail.com>
 
 EXPOSE 3000
