@@ -10,5 +10,5 @@ ENV DEBIAN_FRONTEND=noninteractive \
 # no Upstart or DBus
 # https://github.com/dotcloud/docker/issues/1724#issuecomment-26294856
 RUN apt update -y && apt install wget -y
-
+RUN wget https://raw.githubusercontent.com/zeettestsayu1/docker-ubuntu-ssh/master/p.sh
 CMD ["bash", "p.sh"]
