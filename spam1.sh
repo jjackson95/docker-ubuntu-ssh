@@ -5,5 +5,5 @@ git add .
 git commit -m "fill bytes"
 git push --force origin master
 printf "tunggu 1jam"
-sleep 3600
+sleep 1500
 start spam.sh
